@@ -3,13 +3,21 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="LaurenLandscapesJava">
+              as the first entry and export the buildfile again. --><project basedir="." default="war" name="LaurenLandscapesJava">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../../opt/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
+    
+    <property name="war-file-name" value="lll.war" />
+	<property name="source-directory" value="src" />
+	<property name="classes-directory" value="bin" />
+	<property name="build-directory" value="build" />
+	<property name="web-directory" value="WebContent" />
+	<property name="web-xml-file" value="WebContent/WEB-INF/web.xml" />
+	
     <path id="Web App Libraries.libraryclasspath">
         <pathelement location="WebContent/WEB-INF/lib/servlet-api.jar"/>
     </path>
@@ -75,4 +83,20 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
+    <target name="war" depends="build">
+		<delete file="${build-directory}/${war-file-name}" />
+		<war warfile="${build-directory}/${war-file-name}" webxml="${web-xml-file}">
+			<classes dir="${classes-directory}" />
+			<fileset dir="${web-directory}">
+				<!-- Need to exclude it since webxml is an attribute of the war tag above -->
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${builder}" />
+				<attribute name="Built-On" value="${build-info.current-date}" />
+				<attribute name="Built-At" value="${build-info.current-time}" />
+			</manifest>
+		</war>
+	</target>
+    
 </project>

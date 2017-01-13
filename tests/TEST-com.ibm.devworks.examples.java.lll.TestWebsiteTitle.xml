@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="bluemixworkshop" name="com.ibm.devworks.examples.java.lll.TestWebsiteTitle" skipped="0" tests="2" time="0.042" timestamp="2017-01-13T16:55:12">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.SESSION_MANAGER" value="local/bluemixworkshop:@/tmp/.ICE-unix/1386,unix/bluemixworkshop:/tmp/.ICE-unix/1386" />
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="warname" value="lll.war" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env._system_arch" value="x86_64" />
+    <property name="env.GEM_HOME" value="/home/user/.rvm/gems/ruby-2.2.2" />
+    <property name="os.name" value="Linux" />
+    <property name="env.UPSTART_SESSION" value="unix:abstract=/com/ubuntu/upstart-session/1000/1035" />
+    <property name="sun.boot.class.path" value="/opt/jdk1.8.0_31/jre/lib/resources.jar:/opt/jdk1.8.0_31/jre/lib/rt.jar:/opt/jdk1.8.0_31/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_31/jre/lib/jsse.jar:/opt/jdk1.8.0_31/jre/lib/jce.jar:/opt/jdk1.8.0_31/jre/lib/charsets.jar:/opt/jdk1.8.0_31/jre/lib/jfr.jar:/opt/jdk1.8.0_31/jre/classes" />
+    <property name="env.PWD" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="env.XDG_MENU_PREFIX" value="xfce-" />
+    <property name="ant.home" value="/opt/ant" />
+    <property name="java.runtime.version" value="1.8.0_31-b13" />
+    <property name="env.MY_RUBY_HOME" value="/home/user/.rvm/rubies/ruby-2.2.2" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/xubuntu.default.path" />
+    <property name="env.UPSTART_EVENTS" value="started xsession" />
+    <property name="env.XDG_VTNR" value="7" />
+    <property name="env.DISPLAY" value=":0.0" />
+    <property name="env.rvm_version" value="1.26.11 (latest)" />
+    <property name="env.GLADE_CATALOG_PATH" value=":" />
+    <property name="user.name" value="user" />
+    <property name="env._" value="/opt/ant/bin/ant" />
+    <property name="env.USER" value="user" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.DESKTOP_SESSION" value="xubuntu" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share" />
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+    <property name="env._system_type" value="Linux" />
+    <property name="env.PATH" value="/opt/jdk/bin:/opt/ant/bin:/home/user/android-sdk-linux/tools:/home/user/android-sdk-linux/platform-tools:/opt/android-studio/bin:/home/user/.local/bin:/home/user/.rvm/gems/ruby-2.2.2/bin:/home/user/.rvm/gems/ruby-2.2.2@global/bin:/home/user/.rvm/rubies/ruby-2.2.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/user/.rvm/bin:/home/user/.rvm/bin" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="XFCE" />
+    <property name="ant.file.type.lll" value="file" />
+    <property name="user.language" value="en" />
+    <property name="env.rvm_prefix" value="/home/user" />
+    <property name="env.XDG_SESSION_DESKTOP" value="xubuntu" />
+    <property name="sun.boot.library.path" value="/opt/jdk1.8.0_31/jre/lib/amd64" />
+    <property name="env.UPSTART_JOB" value="startxfce4" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="lll" />
+    <property name="env.rvm_path" value="/home/user/.rvm" />
+    <property name="env.RUBY_VERSION" value="ruby-2.2.2" />
+    <property name="java.version" value="1.8.0_31" />
+    <property name="user.timezone" value="Europe/Berlin" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-Mn3fEMIbjA" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env._system_name" value="Ubuntu" />
+    <property name="java.endorsed.dirs" value="/opt/jdk1.8.0_31/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.rvm_bin_path" value="/home/user/.rvm/bin" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="file.separator" value="/" />
+    <property name="env._system_version" value="15.04" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="env.GDMSESSION" value="xubuntu" />
+    <property name="artifact_dir" value="." />
+    <property name="user.country" value="US" />
+    <property name="env.GNOME_KEYRING_PID" value="" />
+    <property name="java.home" value="/opt/jdk1.8.0_31/jre" />
+    <property name="env.ANDROID_HOME" value="/home/user/android-sdk-linux" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="user" />
+    <property name="ant.file" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/build.xml" />
+    <property name="os.version" value="3.19.0-69-generic" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.31-b07" />
+    <property name="env.UPSTART_INSTANCE" value="" />
+    <property name="env.LANGUAGE" value="en_US" />
+    <property name="ant.library.dir" value="/opt/ant/lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+    <property name="env.IRBRC" value="/home/user/.rvm/rubies/ruby-2.2.2/.irbrc" />
+    <property name="env.SESSIONTYPE" value="" />
+    <property name="env.JAVA_HOME" value="/opt/jdk" />
+    <property name="env.XDG_SESSION_TYPE" value="x11" />
+    <property name="env.TERM" value="xterm" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="env.GLADE_MODULE_PATH" value=":" />
+    <property name="env.GEM_PATH" value="/home/user/.rvm/gems/ruby-2.2.2:/home/user/.rvm/gems/ruby-2.2.2@global" />
+    <property name="env.GDM_LANG" value="en_US" />
+    <property name="target" value="1.7" />
+    <property name="user.home" value="/home/user" />
+    <property name="env.JOB" value="dbus" />
+    <property name="env.OLDPWD" value="/home/user/Downloads/tmp/LaurenLandscapesJavaDevOps/LaurenLandscapesJava" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.WINDOWID" value="52430430" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.XDG_SEAT" value="seat0" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/testbin:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/lib/junit.jar:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/lib/org.hamcrest.core_1.3.0.v201303031735.jar:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/bin:/opt/ant/lib/ant-launcher.jar:/opt/ant/lib/ant.jar:/opt/ant/lib/ant-junit.jar:/opt/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.ibm.devworks.examples.java.lll.TestWebsiteTitle skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml crashfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junitvmwatcher6456684758190241658.properties propsfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junit6499144236218123726.properties" />
+    <property name="env.XDG_SESSION_ID" value="c1" />
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/home/user" />
+    <property name="env.ANT_HOME" value="/opt/ant" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="env.INSTANCE" value="" />
+    <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
+    <property name="java.ext.dirs" value="/opt/jdk1.8.0_31/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava" />
+    <property name="env.XAUTHORITY" value="/home/user/.Xauthority" />
+    <property name="env.SESSION" value="xubuntu" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/xubuntu.mandatory.path" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="xfce4-terminal" />
+    <property name="env.XDG_GREETER_DATA_DIR" value="/var/lib/lightdm-data/user" />
+    <property name="basedir" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava" />
+    <property name="ant.file.lll" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/build.xml" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="env.GLADE_PIXMAP_PATH" value=":" />
+    <property name="ant.core.lib" value="/opt/ant/lib/ant.jar" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.GPG_AGENT_INFO" value="/run/user/1000/keyring/gpg:0:1" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="env.GNOME_KEYRING_CONTROL" value="" />
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-xubuntu:/usr/share/upstart/xdg:/etc/xdg:/etc/xdg" />
+    <property name="ant.project.invoked-targets" value="build" />
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+  </properties>
+  <testcase classname="com.ibm.devworks.examples.java.lll.TestWebsiteTitle" name="testGetTitle" time="0.002" />
+  <testcase classname="com.ibm.devworks.examples.java.lll.TestWebsiteTitle" name="testSetTitle" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

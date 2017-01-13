@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class DispatchServlet
  */
-@WebServlet({  "/home", "/antarctica", "/alaska", "/arctic", "/australia"})
 public class DispatchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final WebsiteTitle myapp = new WebsiteTitle();

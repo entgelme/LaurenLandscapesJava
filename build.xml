@@ -1,102 +1,89 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="war" name="LaurenLandscapesJava">
-    <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../../opt/eclipse/"/>
-    <property name="junit.output.dir" value="junit"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.7"/>
-    <property name="source" value="1.7"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="lll">
     
-    <property name="war-file-name" value="lll.war" /> 
-	<property name="source-directory" value="src" />
-	<property name="classes-directory" value="bin" />
-	<property name="build-directory" value="build" />
-	<property name="web-directory" value="WebContent" />
-	<property name="web-xml-file" value="WebContent/WEB-INF/web.xml" />
-	
-    <path id="Web App Libraries.libraryclasspath">
-        <pathelement location="WebContent/WEB-INF/lib/servlet-api.jar"/>
-    </path>
-    <path id="EAR Libraries.libraryclasspath"/>
-    <path id="JUnit 4.libraryclasspath">
-        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
-        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
-    </path>
-    <path id="LaurenLandscapesJava.classpath">
-        <pathelement location="build/classes"/>
-        <path refid="Web App Libraries.libraryclasspath"/>
-        <path refid="EAR Libraries.libraryclasspath"/>
-        <path refid="JUnit 4.libraryclasspath"/>
-    </path>
-    <target name="init">
-        <mkdir dir="build/classes"/>
-        <copy includeemptydirs="false" todir="build/classes">
-            <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
-    <target name="clean">
-        <delete dir="build/classes"/>
-    </target>
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
-            <classpath refid="LaurenLandscapesJava.classpath"/>
-        </javac>
-    </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
-    <target name="LaurenLandscapesJava (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.ibm.devworks.examples.java.lll.testWebsiteTitle" todir="${junit.output.dir}"/>
-            <classpath refid="LaurenLandscapesJava.classpath"/>
-        </junit>
-    </target>
-    <target name="junitreport">
-        <junitreport todir="${junit.output.dir}">
-            <fileset dir="${junit.output.dir}">
-                <include name="TEST-*.xml"/>
-            </fileset>
-            <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
-    </target>
-    <target name="war" depends="build">
-		<delete file="${build-directory}/${war-file-name}" />
-		<war warfile="${build-directory}/${war-file-name}" webxml="${web-xml-file}">
-			<classes dir="${classes-directory}" />
-			<fileset dir="${web-directory}">
-				<!-- Need to exclude it since webxml is an attribute of the war tag above -->
-				<exclude name="WEB-INF/web.xml" />
-			</fileset>
-			<manifest>
-				<attribute name="Built-By" value="${builder}" />
-				<attribute name="Built-On" value="${build-info.current-date}" />
-				<attribute name="Built-At" value="${build-info.current-time}" />
-			</manifest>
-		</war>
-	</target>
-    
+  <property name="debuglevel" value="source,lines,vars" />
+  <property name="target" value="1.7" />
+  <property name="source" value="1.7" />
+  <property name="warname" value="lll.war" />
+  <property environment="env"/>
+  <condition property="artifact_dir" value="${env.ARCHIVE_DIR}" else=".">
+    <isset property="env.ARCHIVE_DIR" />
+  </condition>
+  
+  <path id="classpathDir">
+    <pathelement location="bin" />
+  </path>
+  
+  <target name="init">
+    <mkdir dir="bin" />
+    <mkdir dir="testbin" />
+    <copy includeemptydirs="false" todir="bin">
+      <fileset dir="src">
+        <exclude name="**/*.java" />
+      </fileset>
+    </copy>
+    <copy includeemptydirs="false" todir="bin">
+      <fileset dir="WebContent" />
+    </copy>
+	<echo message="Copy files to ${artifact_dir} for deployment"/>
+	<copy todir="${artifact_dir}">
+      <fileset file="manifest.yml" />
+    </copy>
+  </target>
+  
+  <target name="clean">
+    <delete dir="bin" />
+  </target>
+  
+  <target name="build" depends="build-project,test,build-war" />
+  
+  <target name="cleanall" depends="clean" />
+  
+  <target name="build-project" depends="clean,init">
+    <echo message="${ant.project.name}: ${ant.file}" />
+    <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+      <src path="src" />
+    	<classpath>
+	      	<pathelement path="${classpathDir}"/>
+	      	<fileset dir="WebContent/WEB-INF/lib">
+	      	  <include name="**/*.jar"/>
+	      	</fileset>
+	   </classpath>
+    </javac>
+    <javac debug="true" debuglevel="${debuglevel}" destdir="testbin" source="${source}" target="${target}"
+        includeantruntime="false">
+        <src path="tests"/>
+		<classpath location="lib/junit.jar"/>
+    	<classpath location="lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        <classpath refid="classpathDir"/>
+    </javac>
+  </target>
+  
+  <target name="test" depends="build-project">
+	<junit printsummary="yes" haltonfailure="no" failureproperty="junit.failed">
+		<classpath>
+		    <pathelement location="testbin"/>
+		    <pathelement location="lib/junit.jar"/>
+			<pathelement location="lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+			<pathelement location="bin"/>			    
+        </classpath>
+        <formatter type="xml"/>
+        
+        <batchtest fork="yes" todir="tests">
+		    <formatter type="xml"/>
+		    <fileset dir="tests">
+                <include name="**/*Test*.java"/>
+		    	<include name="**/*test*.java"/>
+                <exclude name="**/AllTests.java"/>
+		    </fileset>
+        </batchtest>
+	</junit>
+	<fail if="junit.failed"/>
+  </target> 
+  
+  <target name="build-war" depends="build-project">
+    <war destfile="${artifact_dir}/${warname}" basedir="bin" />
+  </target>
+
+  
 </project>

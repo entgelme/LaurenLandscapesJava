@@ -11,7 +11,7 @@
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
     
-    <property name="war-file-name" value="lll.war" />
+    <property name="war-file-name" value="lll.war" /> 
 	<property name="source-directory" value="src" />
 	<property name="classes-directory" value="bin" />
 	<property name="build-directory" value="build" />

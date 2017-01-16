@@ -4,7 +4,7 @@
 	<title>${myapp.title} </title>
 	<meta charset="utf8">  
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    <!-- Bootstrap --> 
    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
    <link href="static/bootstrap-responsive.css" rel="stylesheet">
    <link href="static/bootstrap.css" rel="stylesheet">

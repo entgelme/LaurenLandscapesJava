@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="bluemixworkshop" name="com.ibm.devworks.examples.java.lll.TestWebsiteTitle" skipped="0" tests="2" time="0.042" timestamp="2017-01-13T16:55:12">
+<testsuite errors="0" failures="0" hostname="bluemixworkshop" name="com.ibm.devworks.examples.java.lll.TestWebsiteTitle" skipped="0" tests="2" time="0.051" timestamp="2017-01-26T09:55:23">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
-    <property name="env.SESSION_MANAGER" value="local/bluemixworkshop:@/tmp/.ICE-unix/1386,unix/bluemixworkshop:/tmp/.ICE-unix/1386" />
+    <property name="env.SESSION_MANAGER" value="local/bluemixworkshop:@/tmp/.ICE-unix/1275,unix/bluemixworkshop:/tmp/.ICE-unix/1275" />
     <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="warname" value="lll.war" />
@@ -10,7 +10,7 @@
     <property name="env._system_arch" value="x86_64" />
     <property name="env.GEM_HOME" value="/home/user/.rvm/gems/ruby-2.2.2" />
     <property name="os.name" value="Linux" />
-    <property name="env.UPSTART_SESSION" value="unix:abstract=/com/ubuntu/upstart-session/1000/1035" />
+    <property name="env.UPSTART_SESSION" value="unix:abstract=/com/ubuntu/upstart-session/1000/944" />
     <property name="sun.boot.class.path" value="/opt/jdk1.8.0_31/jre/lib/resources.jar:/opt/jdk1.8.0_31/jre/lib/rt.jar:/opt/jdk1.8.0_31/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_31/jre/lib/jsse.jar:/opt/jdk1.8.0_31/jre/lib/jce.jar:/opt/jdk1.8.0_31/jre/lib/charsets.jar:/opt/jdk1.8.0_31/jre/lib/jfr.jar:/opt/jdk1.8.0_31/jre/classes" />
     <property name="env.PWD" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava" />
     <property name="env.LANG" value="en_US.UTF-8" />
@@ -47,7 +47,7 @@
     <property name="env.RUBY_VERSION" value="ruby-2.2.2" />
     <property name="java.version" value="1.8.0_31" />
     <property name="user.timezone" value="Europe/Berlin" />
-    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-Mn3fEMIbjA" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-yb1LhlekLI" />
     <property name="sun.arch.data.model" value="64" />
     <property name="env._system_name" value="Ubuntu" />
     <property name="java.endorsed.dirs" value="/opt/jdk1.8.0_31/jre/lib/endorsed" />
@@ -69,7 +69,7 @@
     <property name="java.vm.info" value="mixed mode" />
     <property name="env.LOGNAME" value="user" />
     <property name="ant.file" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/build.xml" />
-    <property name="os.version" value="3.19.0-69-generic" />
+    <property name="os.version" value="3.19.0-79-generic" />
     <property name="path.separator" value=":" />
     <property name="java.vm.version" value="25.31-b07" />
     <property name="env.UPSTART_INSTANCE" value="" />
@@ -90,9 +90,9 @@
     <property name="target" value="1.7" />
     <property name="user.home" value="/home/user" />
     <property name="env.JOB" value="dbus" />
-    <property name="env.OLDPWD" value="/home/user/Downloads/tmp/LaurenLandscapesJavaDevOps/LaurenLandscapesJava" />
+    <property name="env.OLDPWD" value="/home/user/workspaces/bluemix-demo-2/TomcatHelloWorldApp" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="env.WINDOWID" value="52430430" />
+    <property name="env.WINDOWID" value="50331652" />
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
@@ -100,7 +100,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="java.class.path" value="/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/testbin:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/lib/junit.jar:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/lib/org.hamcrest.core_1.3.0.v201303031735.jar:/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/bin:/opt/ant/lib/ant-launcher.jar:/opt/ant/lib/ant.jar:/opt/ant/lib/ant-junit.jar:/opt/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.ibm.devworks.examples.java.lll.TestWebsiteTitle skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml crashfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junitvmwatcher6456684758190241658.properties propsfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junit6499144236218123726.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.ibm.devworks.examples.java.lll.TestWebsiteTitle skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/tests/TEST-com.ibm.devworks.examples.java.lll.TestWebsiteTitle.xml crashfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junitvmwatcher2516688123839557916.properties propsfile=/home/user/workspaces/bluemix-demo-2/LaurenLandscapesJava/junit6486860920695429575.properties" />
     <property name="env.XDG_SESSION_ID" value="c1" />
     <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />

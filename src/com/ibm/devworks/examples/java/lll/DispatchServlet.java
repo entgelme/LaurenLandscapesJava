@@ -17,7 +17,7 @@ public class DispatchServlet extends HttpServlet {
 	private static final WebsiteTitle myapp = new WebsiteTitle();
 
     /**
-     * Default constructor. 
+     * Default constructor.  
      */
     public DispatchServlet() {
         // TODO Auto-generated constructor stub
